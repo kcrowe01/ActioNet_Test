@@ -29,11 +29,11 @@ public class Question3 {
 		//example but still uses multiple control structures.
 		/*
 		int n = 6;
-		List<Character> list = new ArrayList<Character>(Collections.nCopies((int)Math.pow(n, 2), '.'));
-		for(int i = 0; i <list.size(); i++){
+		for(int i = 0; i < (int)Math.pow(n, 2); i++){
 			int row = (i/n) + 1;
-			System.out.print((i%n >= (n-(row))%n) ? Integer.toString(row) : list.get(i));
+			System.out.print((i%n >= (n-(row))%n) ? Integer.toString(row) : '.');
 			if(i%n == n - 1 ) System.out.print("\n");
-		} */
+		} 
+		*/
 	}
 }
