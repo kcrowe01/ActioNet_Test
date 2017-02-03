@@ -1,4 +1,8 @@
 import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.lang.Integer;
 
 
 /*
@@ -20,5 +24,16 @@ public class Question3 {
 		for(int i = 1; i <= 5; i++){
 			System.out.println(pattern.get(i));
 		}
+
+		//The code below implements this using n instead of 5. It is more condensed than the
+		//example but still uses multiple control structures.
+		/*
+		int n = 6;
+		List<Character> list = new ArrayList<Character>(Collections.nCopies((int)Math.pow(n, 2), '.'));
+		for(int i = 0; i <list.size(); i++){
+			int row = (i/n) + 1;
+			System.out.print((i%n >= (n-(row))%n) ? Integer.toString(row) : list.get(i));
+			if(i%n == n - 1 ) System.out.print("\n");
+		} */
 	}
 }
