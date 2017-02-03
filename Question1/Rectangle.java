@@ -4,6 +4,8 @@ public class Rectangle implements Shape{
 	double width;
 
 	Rectangle(double h, double w){
+		assert h >= 0;
+		assert w >= 0;
 		height = h;
 		width = w;
 	}

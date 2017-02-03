@@ -6,6 +6,12 @@ public class Triangle implements Shape{
 	double h;
 
 	Triangle(double side1, double side2, double side3){
+		assert side1 < (side2 + side3);
+		assert side2 < (side1 + side3);
+		assert side3 < (side1 + side2);
+		assert side1 > 0;
+		assert side2 > 0;
+		assert side3 > 0;
 		a = side1;
 		b = side2;
 		c = side3;

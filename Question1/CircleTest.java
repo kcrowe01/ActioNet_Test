@@ -3,7 +3,7 @@ import org.junit.Test;
 
 public class CircleTest {
 	@Test
-	public void evaluateExpression() {
+	public void circTests() {
 		double radius = 2.8;
 		Shape circle = new Circle(radius);
 		double perimeter = circle.getPerimeter();

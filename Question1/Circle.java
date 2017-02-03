@@ -3,6 +3,7 @@ public class Circle implements Shape{
 	double r;
 
 	Circle(double radius){
+		assert radius >= 0;
 		r = radius;
 	}
 	
