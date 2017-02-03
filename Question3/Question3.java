@@ -1,5 +1,13 @@
 import java.util.HashMap;
 
+
+/*
+ * Still Working on this.
+ * Mapping the index to the pattern on each line was 
+ * and easy way to duplicate the output with only one
+ * control structure but it does not work well for using 
+ * n instead of 5
+ */ 
 public class Question3 {
 	public static void main(String args[]){
 		HashMap<Integer, String> pattern = new HashMap<Integer, String>();
